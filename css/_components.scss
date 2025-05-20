@@ -1,0 +1,63 @@
+.logo {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 1rem;
+
+    .category {
+      font-size: 0.75rem;
+      color: $accent-color;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    time {
+      font-size: 0.8rem;
+      color: $accent-color;
+    }
+  }
+
+  &.large {
+    grid-column: span 2;
+  }
+}
